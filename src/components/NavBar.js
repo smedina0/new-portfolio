@@ -24,7 +24,8 @@ const CustomLink = ({ href, title, className = '' }) => {
         className={`h-[1px] inline-block bg-dark absolute left-0 -bottom-0.5
         group-hover:w-full transition-[width] ease duration-300 ${
           router.asPath === href ? 'w-full' : 'w-0'
-        }`}
+        }
+          dark:bg-light`}
       >
         &nbsp;
       </span>
@@ -35,7 +36,7 @@ const CustomLink = ({ href, title, className = '' }) => {
 const NavBar = () => {
   const [mode, setMode] = useThemeSwitcher();
   return (
-    <header className='w-full px-32 py-8 font-medium flex items-center justify-between'>
+    <header className='w-full px-32 py-8 font-medium flex items-center justify-between dark:text-light'>
       <nav>
         <ul className='list-none p-0 m-0'>
           <li className='inline-block'>
@@ -105,17 +106,20 @@ const NavBar = () => {
               <DribbbleIcon />
             </a>
           </motion.li>
-         
-
         </ul>
         <button
-              onClick={() => setMode(mode === 'light' ? 'dark' : 'light')}
-              className='ml-3 flex items-center justify-center rounded-full p-1'
-            >
-              {mode === 'dark' ? 
-                <SunIcon className={'fill-dark'} /> : <MoonIcon className={'fill-dark'} />
-              }
-            </button>
+          onClick={() => setMode(mode === 'light' ? 'dark' : 'light')}
+          className={`ml-3 flex items-center justify-center rounded-full p-1
+          ${mode === 'light' ? 'bg-dark text-light' : 'bg-light text-dark'}
+          
+          `}
+        >
+          {mode === 'dark' ? (
+            <SunIcon className={'fill-dark'} />
+          ) : (
+            <MoonIcon className={'fill-dark'} />
+          )}
+        </button>
       </nav>
     </header>
   );
