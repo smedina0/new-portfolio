@@ -17,7 +17,7 @@ export default function App({ Component, pageProps }) {
         <link rel='icon' href='/favicon.ico' />
       </Head>
       <main
-        className={`${monsterrat.variable} font-monsterrat bg-light w-full min-h-screen`}
+        className={`${monsterrat.variable} font-monsterrat bg-light dark:bg-dark w-full min-h-screen`}
       >
         <NavBar />
         <Component {...pageProps} />
