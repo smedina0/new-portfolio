@@ -219,7 +219,7 @@ const NavBar = () => {
             </ul>
           </nav>
           <div className='absolute left-[50%] top-2 translate-x-[-50%]'>
-            <Logo />
+          
           </div>
           <nav
             className='flex items-center justify-center flex-wrap'
@@ -288,6 +288,9 @@ const NavBar = () => {
           </nav>
         </motion.div>
       ) : null}
+      <div className="absolute left-[50%] top-2 translate-x-[-50%]">
+      <Logo />
+      </div>
     </header>
   );
 };

@@ -6,14 +6,11 @@ import Link from 'next/link';
 import Image from 'next/image';
 import article1 from '../../public/images/articles/pagination component in reactjs.jpg';
 import article2 from '../../public/images/articles/create loading screen in react js.jpg';
-import article3 from '../../public/images/articles/create modal component in react using react portals.png';
-import article4 from '../../public/images/articles/form validation in reactjs using custom react hook.png';
-import article5 from '../../public/images/articles/smooth scrolling in reactjs.png';
 import { motion, useMotionValue } from 'framer-motion';
 
 const FramerImage = motion(Image);
 
-const MovingImg = ({ title, img, link }) => {
+const MovingImg = ({ title, link }) => {
   const x = useMotionValue(0);
   const y = useMotionValue(0);
   const imgRef = useRef(null);
@@ -45,15 +42,13 @@ const MovingImg = ({ title, img, link }) => {
         initial={{ opacity: 0 }}
         whileInView={{ opacity: 1, transition: { duration: 0.2 } }}
         ref={imgRef}
-        src={img}
-        alt=''
         className='w-96 h-auto hidden absolute rounded-lg z-10'
       />
     </Link>
   );
 };
 
-const Article = ({ img, title, date, link }) => {
+const Article = ({title, date, link }) => {
   return (
     <motion.li
       initial={{ y: 200 }}
@@ -61,7 +56,7 @@ const Article = ({ img, title, date, link }) => {
       viewport={{ once: true }}
       className='relative w-full p-4 py-6 my-4 rounded-xl flex items-center justify-between bg-light text-dark first:mt-0 border border-solid border-dark border-r-4 border-b-4 dark:border-light dark:bg-dark dark:text-light sm:flex-col'
     >
-      <MovingImg title={title} img={img} link={link} />
+      <MovingImg title={title} link={link} />
       <span className='text-primary font-semibold pl-4 dark:text-primaryDark sm:self-start sm:pl-0 xs:text-sm'>
         {date}
       </span>
@@ -138,37 +133,31 @@ Follow this step-by-step guide to integrate Pagination component in your ReactJS
           <ul>
             <Article
               title='Form Validation In Reactjs: Build A Reusable Custom Hook For Inputs And Error Handling'
-              img={article3}
               date='May 20, 2023'
               link='/'
             />
             <Article
               title='Form Validation In Reactjs: Build A Reusable Custom Hook For Inputs And Error Handling'
-              img={article4}
               date='May 20, 2023'
               link='/'
             />
             <Article
               title='Form Validation In Reactjs: Build A Reusable Custom Hook For Inputs And Error Handling'
-              img={article5}
               date='May 20, 2023'
               link='/'
             />
             <Article
               title='Form Validation In Reactjs: Build A Reusable Custom Hook For Inputs And Error Handling'
-              img={article3}
               date='May 20, 2023'
               link='/'
             />
             <Article
               title='Form Validation In Reactjs: Build A Reusable Custom Hook For Inputs And Error Handling'
-              img={article4}
               date='May 20, 2023'
               link='/'
             />
             <Article
               title='Form Validation In Reactjs: Build A Reusable Custom Hook For Inputs And Error Handling'
-              img={article5}
               date='May 20, 2023'
               link='/'
             />
