@@ -7,6 +7,7 @@ import Link from 'next/link';
 import { GithubIcon } from '@/components/Icons';
 import project1 from '../../public/images/projects/crypto-screener-cover-image.jpg';
 import { motion } from 'framer-motion';
+import TransitionEffect from '@/components/TransitionEffect';
 
 const FramerImage = motion(Image);
 
@@ -42,7 +43,9 @@ const FeaturedProject = ({ type, title, summary, img, link, github }) => {
             {title}
           </h2>
         </Link>
-        <p className='my-2 font-medium text-dark dark:text-light sm:text-sm'>{summary}</p>
+        <p className='my-2 font-medium text-dark dark:text-light sm:text-sm'>
+          {summary}
+        </p>
         <div className='mt-2 flex items-center'>
           <Link href={github} target='_blank' className='w-10'>
             <GithubIcon />
@@ -86,7 +89,9 @@ const Project = ({ title, type, img, link, github }) => {
           target='_blank'
           className='hover:underline underline-offset-2'
         >
-          <h2 className='my-2 w-full text-left text-3xl font-bold lg:text-2xl'>{title}</h2>
+          <h2 className='my-2 w-full text-left text-3xl font-bold lg:text-2xl'>
+            {title}
+          </h2>
         </Link>
         <div className='w-full mt-2 flex items-center justify-between'>
           <Link
@@ -112,6 +117,7 @@ const projects = () => {
         <title> Projects | Steven Medina</title>
         <meta name='decription' content='Projects by Steven Medina' />
       </Head>
+      <TransitionEffect />
       <main className='w-full mb-16 flex flex-col items-center justify-center dark:text-light'>
         <Layout className='pt-16'>
           <AnimatedText

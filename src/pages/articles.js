@@ -7,6 +7,7 @@ import Image from 'next/image';
 import article1 from '../../public/images/articles/pagination component in reactjs.jpg';
 import article2 from '../../public/images/articles/create loading screen in react js.jpg';
 import { motion, useMotionValue } from 'framer-motion';
+import TransitionEffect from '@/components/TransitionEffect';
 
 const FramerImage = motion(Image);
 
@@ -48,7 +49,7 @@ const MovingImg = ({ title, link }) => {
   );
 };
 
-const Article = ({title, date, link }) => {
+const Article = ({ title, date, link }) => {
   return (
     <motion.li
       initial={{ y: 200 }}
@@ -68,7 +69,7 @@ const FeaturedArticle = ({ img, title, time, summary, link }) => {
   return (
     <li className='col-span-1 w-full p-4 bg-light text-dark border border-solid border-dark rounded-2xl relative dark:bg-dark dark:border-light dark:text-light'>
       <div className='absolute top-0 -right-3 -z-10 w-[101.9%] h-[103%] rounded-[2rem] bg-dark rounded-br-3xl ' />
-       <Link
+      <Link
         href={link}
         target='_blank'
         className='w-full inline-block cursor-pointer overflow-hidden rounded-lg'
@@ -82,7 +83,7 @@ const FeaturedArticle = ({ img, title, time, summary, link }) => {
           priority
           sizes='(max-width: 768px)100vw, (max-width: 1200px) 50vw, 50vw'
         />
-      </Link> 
+      </Link>
       <Link href={link} target='_blank' className=''>
         <h2 className='capitalize text-2xl font-bold my-2 mt-4 hover:underline xs:text-lg '>
           {title}
@@ -103,6 +104,7 @@ const articles = () => {
         <title> Articles | Steven Medina</title>
         <meta name='decription' content='Artcles By Steven Medina' />
       </Head>
+      <TransitionEffect />
       <main className='w-full mb-16 flex flex-col items-center justify-center overflow-hidden dark: text-light'>
         <Layout className='pt-16'>
           <AnimatedText
