@@ -124,7 +124,7 @@ const NavBar = () => {
               </a>
             </motion.li>
             <motion.li
-              className='inline-block w-6 mx-3 bg-light rounded-full'
+              className='inline-block w-6 mx-3 bg-light dark:bg-dark  rounded-full'
               whileHover={{ y: -2 }}
               whileTap={{ scale: 0.9 }}
             >
@@ -159,20 +159,26 @@ const NavBar = () => {
                 <DribbbleIcon />
               </a>
             </motion.li>
-          </ul>
-          <button
-            onClick={() => setMode(mode === 'light' ? 'dark' : 'light')}
-            className={`ml-3 flex items-center justify-center rounded-full p-1
+            <motion.li
+              className='inline-block'
+              whileHover={{ y: -2 }}
+              whileTap={{ scale: 0.9 }}
+            >
+              <button
+                onClick={() => setMode(mode === 'light' ? 'dark' : 'light')}
+                className={`ml-3 flex items-center justify-center rounded-full p-1
           ${mode === 'light' ? 'bg-dark text-light' : 'bg-light text-dark'}
           
           `}
-          >
-            {mode === 'dark' ? (
-              <SunIcon className={'fill-dark'} />
-            ) : (
-              <MoonIcon className={'fill-dark'} />
-            )}
-          </button>
+              >
+                {mode === 'dark' ? (
+                  <SunIcon className={'fill-dark'} />
+                ) : (
+                  <MoonIcon className={'fill-dark'} />
+                )}
+              </button>
+            </motion.li>
+          </ul>
         </nav>
       </div>
 
@@ -218,9 +224,7 @@ const NavBar = () => {
               </li>
             </ul>
           </nav>
-          <div className='absolute left-[50%] top-2 translate-x-[-50%]'>
-          
-          </div>
+          <div className='absolute left-[50%] top-2 translate-x-[-50%]'></div>
           <nav
             className='flex items-center justify-center flex-wrap'
             aria-label='social media'
@@ -236,7 +240,7 @@ const NavBar = () => {
                 </a>
               </motion.li>
               <motion.li
-                className='inline-block w-6 mx-3 bg-light rounded-full dark:bg-dark sm:mx-1'
+                className='inline-block w-6 mx-3 bg-light dark:bg-dark rounded-full sm:mx-1'
                 whileHover={{ y: -2 }}
                 whileTap={{ scale: 0.9 }}
               >
@@ -271,25 +275,31 @@ const NavBar = () => {
                   <DribbbleIcon />
                 </a>
               </motion.li>
-            </ul>
-            <button
-              onClick={() => setMode(mode === 'light' ? 'dark' : 'light')}
-              className={`ml-3 flex items-center justify-center rounded-full p-1
+              <motion.li
+                className='inline-block'
+                whileHover={{ y: -2 }}
+                whileTap={{ scale: 0.9 }}
+              >
+                <button
+                  onClick={() => setMode(mode === 'light' ? 'dark' : 'light')}
+                  className={`ml-3 flex items-center justify-center rounded-full p-1
     ${mode === 'light' ? 'bg-dark text-light' : 'bg-light text-dark'}
     
     `}
-            >
-              {mode === 'dark' ? (
-                <SunIcon className={'fill-dark '} />
-              ) : (
-                <MoonIcon className={'fill-dark'} />
-              )}
-            </button>
+                >
+                  {mode === 'dark' ? (
+                    <SunIcon className={'fill-dark '} />
+                  ) : (
+                    <MoonIcon className={'fill-dark'} />
+                  )}
+                </button>
+              </motion.li>
+            </ul>
           </nav>
         </motion.div>
       ) : null}
-      <div className="absolute left-[50%] top-2 translate-x-[-50%]">
-      <Logo />
+      <div className='absolute left-[50%] top-2 translate-x-[-50%]'>
+        <Logo />
       </div>
     </header>
   );
