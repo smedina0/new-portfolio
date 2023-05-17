@@ -280,7 +280,7 @@ const NavBar = () => {
                 whileHover={{ y: -2 }}
                 whileTap={{ scale: 0.9 }}
               >
-                <button
+                <a
                   onClick={() => setMode(mode === 'light' ? 'dark' : 'light')}
                   className={`ml-3 flex items-center justify-center rounded-full p-1
     ${mode === 'light' ? 'bg-dark text-light' : 'bg-light text-dark'}
@@ -292,7 +292,7 @@ const NavBar = () => {
                   ) : (
                     <MoonIcon className={'fill-dark'} />
                   )}
-                </button>
+                </a>
               </motion.li>
             </ul>
           </nav>
