@@ -51,19 +51,17 @@ const Experience = () => {
         />
         <div className='w-full flex flex-col items-start justify-between ml-4 xs:ml-2'>
           <Details
-            position='Software Engineer'
-            company='Google'
-            companyLink='www.google.com'
-            time='2022-Present'
-            address='Mountain View, CA'
-            work="Worked on a team responsible for developing new features for Google's 
-                   search engine, including improving the accuracy and relevance of search results and 
-                   developing new tools for data analysis and visualization."
+            position='Accessibility Engineer'
+            company='JPMorgan Chase & Co.'
+            companyLink='https://www.chase.com'
+            time='Jan 2022-Present'
+            address='New York City'
+            work='Performed all testing activities for initiatives across assigned projects, utilizing processes, methods and software that ensure accessibility for all customer-facing web pages and reviewed front-end code for WCAG compliance and provided code-based solutions. '
           />
           <Details
             position='Software Engineer'
             company='Google'
-            companyLink='www.google.com'
+            companyLink='https://www.google.com'
             time='2022-Present'
             address='Mountain View, CA'
             work="Worked on a team responsible for developing new features for Google's 
