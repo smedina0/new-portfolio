@@ -114,7 +114,7 @@ const NavBar = () => {
           aria-label='social media'
         >
           <ul className='list-none'>
-            <motion.li
+            {/* <motion.li
               className='inline-block w-6 mr-3'
               whileHover={{ y: -2 }}
               whileTap={{ scale: 0.9 }}
@@ -122,13 +122,13 @@ const NavBar = () => {
               <a href='https://twitter.com' target={'_blank'}>
                 <TwitterIcon />
               </a>
-            </motion.li>
+            </motion.li> */}
             <motion.li
               className='inline-block w-6 mx-3 bg-light dark:bg-dark  rounded-full'
               whileHover={{ y: -2 }}
               whileTap={{ scale: 0.9 }}
             >
-              <a href='https://twitter.com' target={'_blank'}>
+              <a href='https://github.com/smedina0' target={'_blank'}>
                 <GithubIcon />
               </a>
             </motion.li>
@@ -137,11 +137,14 @@ const NavBar = () => {
               whileHover={{ y: -2 }}
               whileTap={{ scale: 0.9 }}
             >
-              <a href='https://twitter.com' target={'_blank'}>
+              <a
+                href='https://www.linkedin.com/in/smedinaa11y/'
+                target={'_blank'}
+              >
                 <LinkedInIcon />
               </a>
             </motion.li>
-            <motion.li
+            {/* <motion.li
               className='inline-block w-6 mx-3 '
               whileHover={{ y: -2 }}
               whileTap={{ scale: 0.9 }}
@@ -149,8 +152,8 @@ const NavBar = () => {
               <a href='https://twitter.com' target={'_blank'}>
                 <PinterestIcon />
               </a>
-            </motion.li>
-            <motion.li
+            </motion.li> */}
+            {/* <motion.li
               className='inline-block w-6 ml-3'
               whileHover={{ y: -2 }}
               whileTap={{ scale: 0.9 }}
@@ -158,7 +161,7 @@ const NavBar = () => {
               <a href='https://twitter.com' target={'_blank'}>
                 <DribbbleIcon />
               </a>
-            </motion.li>
+            </motion.li> */}
             <motion.li
               className='inline-block'
               whileHover={{ y: -2 }}
@@ -230,7 +233,7 @@ const NavBar = () => {
             aria-label='social media'
           >
             <ul className='list-none'>
-              <motion.li
+              {/* <motion.li
                 className='inline-block w-6 mx-3 dark:bg-dark dark:outline outline-black rounded sm:mx-1'
                 whileHover={{ y: -2 }}
                 whileTap={{ scale: 0.9 }}
@@ -238,13 +241,13 @@ const NavBar = () => {
                 <a href='https://twitter.com' target={'_blank'}>
                   <TwitterIcon />
                 </a>
-              </motion.li>
+              </motion.li> */}
               <motion.li
                 className='inline-block w-6 mx-3 bg-light dark:bg-dark rounded-full sm:mx-1'
                 whileHover={{ y: -2 }}
                 whileTap={{ scale: 0.9 }}
               >
-                <a href='https://twitter.com' target={'_blank'}>
+                <a href='https://github.com/smedina0' target={'_blank'}>
                   <GithubIcon />
                 </a>
               </motion.li>
@@ -253,11 +256,14 @@ const NavBar = () => {
                 whileHover={{ y: -2 }}
                 whileTap={{ scale: 0.9 }}
               >
-                <a href='https://twitter.com' target={'_blank'}>
+                <a
+                  href='https://www.linkedin.com/in/smedinaa11y/'
+                  target={'_blank'}
+                >
                   <LinkedInIcon />
                 </a>
               </motion.li>
-              <motion.li
+              {/* <motion.li
                 className='inline-block w-6 mx-3 bg-light rounded-full sm:mx-1'
                 whileHover={{ y: -2 }}
                 whileTap={{ scale: 0.9 }}
@@ -265,8 +271,8 @@ const NavBar = () => {
                 <a href='https://twitter.com' target={'_blank'}>
                   <PinterestIcon />
                 </a>
-              </motion.li>
-              <motion.li
+              </motion.li> */}
+              {/* <motion.li
                 className='inline-block w-6 ml-3 sm:mx-1'
                 whileHover={{ y: -2 }}
                 whileTap={{ scale: 0.9 }}
@@ -274,9 +280,9 @@ const NavBar = () => {
                 <a href='https://twitter.com' target={'_blank'}>
                   <DribbbleIcon />
                 </a>
-              </motion.li>
+              </motion.li> */}
               <motion.li
-                className='inline-block w-6 ml-3 sm:mx-1'
+                className='inline-block'
                 whileHover={{ y: -2 }}
                 whileTap={{ scale: 0.9 }}
               >

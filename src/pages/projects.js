@@ -5,7 +5,11 @@ import Layout from '../components/Layout';
 import AnimatedText from '../components/AnimatedText';
 import Link from 'next/link';
 import { GithubIcon } from '@/components/Icons';
-import project1 from '../../public/images/projects/crypto-screener-cover-image.jpg';
+import project1 from '../../public/images/projects/around-the-world.png';
+import project2 from '../../public/images/projects/onit.png';
+import project3 from '../../public/images/projects/cardcollector.png';
+import project4 from '../../public/images/projects/pokestats.png';
+import project5 from '../../public/images/projects/YGOFC.png';
 import { motion } from 'framer-motion';
 import TransitionEffect from '@/components/TransitionEffect';
 
@@ -121,75 +125,68 @@ const projects = () => {
       <main className='w-full mb-16 flex flex-col items-center justify-center dark:text-light'>
         <Layout className='pt-16'>
           <AnimatedText
-            text='Imagination Trumps Knowledge!'
+            text='My Recent Projects'
             className='mb-16 lg:!text-7xl sm:mb-8 sm:!text-6xl xs:!text-4xl'
           />
           {/* Projects Layout Below */}
           <div className='grid grid-cols-12 gap-24 gap-y-32 xl:gap-x-16 lg:gap-x-8 md:gap-y-24 sm:gap-x-0'>
-            <div className='col-span-12'>
+          <div className='col-span-12'>
               <FeaturedProject
-                title='Crypto Screener Application'
-                img={project1}
-                summary='A feature-rich Crypto Screener App using React, Tailwind CSS, Context API, React Router and Recharts. 
-                It shows detail regarding almost all the cryptocurrency. You can easily convert the price in your 
-                local currency.'
-                link='/'
-                type='Featured Project'
-                github='/'
+               title='Onit'
+               img={project2}
+               summary={`Onit allows for list creation and task completion. To support users' well-being, the application incorporates an ever-evolving selection of motivational quotes and a mental health check-in and tracking system, emphasizing the importance of mental health in tandem with productivity.`}
+               link='https://onit-notes.netlify.app/'
+               github='https://github.com/smedina0/onit-frontend'
+               type='#React #NodeJS #Firebase #Bootstrap Note Taking App'
               />
             </div>
+            
             <div className='col-span-6 sm:col-span-12'>
               {' '}
               <Project
-                title='Crypto Screener Application'
-                img={project1}
-                summary='A feature-rich Crypto Screener App using React, Tailwind CSS, Context API, React Router and Recharts. 
-                It shows detail regarding almost all the cryptocurrency. You can easily convert the price in your 
-                local currency.'
-                link='/'
-                github='/'
-                type='Featured Project'
+                title='Yu-Gi-Oh! Fantasy Collection'
+                img={project5}
+                summary=''
+                link='https://yugioh-fantasy-collection.herokuapp.com/yugioh'
+                github='https://github.com/smedina0/yugioh-fantasy-collection'
+                type='#JavaScript #HTML #CSS #Bootstrap #NodeJS #Express #MongoDB #Bcrypt #YGOPRODeckAPI Yu-Gi-Oh! Card Database'
               />
             </div>
 
             <div className='col-span-6 sm:col-span-12'>
               <Project
-                title='Crypto Screener Application'
-                img={project1}
-                summary='A feature-rich Crypto Screener App using React, Tailwind CSS, Context API, React Router and Recharts. 
-                It shows detail regarding almost all the cryptocurrency. You can easily convert the price in your 
-                local currency.'
-                link='/'
-                github='/'
-                type='Featured Project'
+                title='Cardcollector'
+                img={project3}
+                summary=''
+                link='https://cardcollector.herokuapp.com/'
+                github='https://github.com/smedina0/cardcollector'
+                type='#Python #Django #Materialize Card Collection App'
               />
             </div>
             <div className='col-span-12'>
               <FeaturedProject
-                title='Crypto Screener Application'
+                title='Around The World'
                 img={project1}
-                summary='A feature-rich Crypto Screener App using React, Tailwind CSS, Context API, React Router and Recharts. 
-                It shows detail regarding almost all the cryptocurrency. You can easily convert the price in your 
-                local currency.'
-                link='/'
-                type='Featured Project'
-                github='/'
+                summary='This application is about news and articles. It provides access to a page that makes an API call to display recent top headlines, some information about them, and links to them. There is also an option for users to create their own custom articles, and even includes a rich text editor. Users can also see other user created articles as if they had their own little news community.'
+                link='https://around-the-world.herokuapp.com/all/'
+                type='#Python #Django #Materialize NEWS Website'
+                github='https://github.com/smedina0/around-the-world'
               />
             </div>
+          
+          
             <div className='col-span-6 sm:col-span-12'>
               {' '}
               <Project
-                title='Crypto Screener Application'
-                img={project1}
-                summary='A feature-rich Crypto Screener App using React, Tailwind CSS, Context API, React Router and Recharts. 
-                It shows detail regarding almost all the cryptocurrency. You can easily convert the price in your 
-                local currency.'
-                link='/'
-                github='/'
-                type='Featured Project'
+                title='PokeStats'
+                img={project4}
+                summary=''
+                link='https://pages.git.generalassemb.ly/smedina2494/PokeStats/'
+                github='https://github.com/smedina0/PokeStats'
+                type='#jQuery #Bootstrap #PokeAPI Pokemon Stats App'
               />
             </div>
-            <div className='col-span-6 sm:col-span-12'>
+            {/* <div className='col-span-6 sm:col-span-12'>
               <Project
                 title='Crypto Screener Application'
                 img={project1}
@@ -200,7 +197,7 @@ const projects = () => {
                 github='/'
                 type='Featured Project'
               />
-            </div>
+            </div> */}
           </div>
         </Layout>
       </main>
