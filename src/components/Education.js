@@ -42,7 +42,7 @@ const Education = () => {
         <div className='w-full flex flex-col items-start justify-between ml-4 dark:text-light/75 xs:ml-2'>
           <Details
             type='Software Engineering Certificate'
-            time='Nov 2022-May 2023'
+            time='Nov 2022 - May 2023'
             place='General Assembly'
             info='24-week long 500 hours full-time and full-stack web development program conducted in a remote setting, providing experience with the latest front and back-end programming languages, tools, and methodologies including HTML, CSS, SASS, JavaScript, Node.JS, React.JS, MongoDB, Mongoose, SQL, Python, and Django.'
           />
@@ -60,13 +60,13 @@ const Education = () => {
           />
           <Details
             type='Springboard, UX/UI Design Certificate'
-            time='Jan 2017-Jun 2017'
+            time='Jan 2017 - Jun 2017'
             place='Springboard'
             info='Intensive 6-month long online program that covered the fundamentals of UX/UI design, including user research, prototyping, and visual design.'
           />
           <Details
             type='Bachelor of Arts - BA, Neuroscience and Theatre Double Major'
-            time='2013-2017'
+            time='2013 - 2017'
             place='Middlebury College'
             info='Several years of coursework in the sciences, including: Biology, Chemistry, Physics, and Psychology. Several years of coursework in the arts, including: Acting, Directing, Playwriting, and Theatre History.'
           />

@@ -54,7 +54,7 @@ const Experience = () => {
             position='Accessibility Engineer'
             company='JPMorgan Chase & Co.'
             companyLink='https://www.chase.com'
-            time='Jan 2022-Present'
+            time='Jan 2022 - Present'
             address='New York City'
             work='Performed all testing activities for initiatives across assigned projects, utilizing processes, methods and software that ensure accessibility for all customer-facing web pages and reviewed front-end code for WCAG compliance and provided code-based solutions. '
           />
@@ -62,7 +62,7 @@ const Experience = () => {
             position='Web Accessibility Specialist'
             company='The City University of New York'
             companyLink='https://www.cuny.edu'
-            time='Mar 2019-Jan 2022'
+            time='Mar 2019 - Jan 2022'
             address='New York City'
             work='Audited CUNY websites for WCAG 2.1 AA compliance and made WAI-ARIA/HTML/CSS/JavaScript suggestions for ways to improve accessibility in collaboration with front end developers. '
           />
@@ -70,7 +70,7 @@ const Experience = () => {
             position='Accessibility UX Designer'
             company='New York Univeristy'
             companyLink='https://www.NYU.edu'
-            time='Jan 2019-Jan 2020'
+            time='Jan 2019 - Jan 2020'
             address='New York City'
             work=' Executed all visual design stages from concept to final hand-off to the development team and verified that the development team implemented accessible HTML, CSS, and Javascript by testing different iterations of the product before providing the client with the final deliverable.'
           />
@@ -78,7 +78,7 @@ const Experience = () => {
             position='Document Accessibility Specialist'
             company='New York Univeristy'
             companyLink='https://www.NYU.edu'
-            time='Feb 2018-Jan 2019'
+            time='Feb 2018 - Jan 2019'
             address='New York City'
             work='Ensured that electronic documents achieved Section 508, ADA, and WCAG 2.0 AA compliance by using screen readers such as NVDA, JAWS, and Voiceover.'
           />
@@ -86,7 +86,7 @@ const Experience = () => {
             position='Eye Tracking Operator'
             company='Eye Square'
             companyLink='https://www.eye-square.com/en/'
-            time='Oct 2017-Jan 2018'
+            time='Oct 2017 - Jan 2018'
             address='New York City'
             work='Performed implicit market research using eye tracking technology and managed a database of recorded data.'
           />
