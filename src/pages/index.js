@@ -34,11 +34,11 @@ export default function Home() {
                 className='!text-6xl !text-left xl:!text-5xl lg:!text-center lg:!text-6xl md:!text-5xl sm:!text-3xl'
               />
               <p className='my-4 text-base font-medium md:text-sm sm:text-xs'>
-                My name is Steven Medina. I am a fullstack developer based in
+                {` My name is Steven Medina. I am a fullstack developer based in
                 New York City. I have experience utilizing different
                 technologies to build web applications. I'm passionate about
                 cutting-edge, accessible, beautiful interfaces and intuitively
-                implemented UX.
+                implemented UX.`}
               </p>
               <div className='flex items-center self-start mt-2 lg:self-center'>
                 <Link
