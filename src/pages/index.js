@@ -41,14 +41,14 @@ export default function Home() {
                 implemented UX.`}
               </p>
               <div className='flex items-center self-start mt-2 lg:self-center'>
-                <Link
+                <a
                   href='/Medina SEI Resume.pdf'
                   target={'_blank'}
                   className='flex items-center bg-dark text-light p-2.5 px-6 rounded-lg text-lg font-semibold hover:bg-light hover:text-dark border-2 border-solid border-transparent hover:border-dark dark:bg-light dark:text-dark hover:dark:bg-dark hover:dark:text-light hover:dark:border-light md:p-2 md:px-4 md:py-2 md:text-base sm:text-base sm:p-2 sm:px-4 sm:py-2 xs:p-2 xs:px-4 xs:text-base '
                   download={true}
                 >
                   Resume <LinkArrow className={'w-6 ml-1'} />
-                </Link>
+                </a>
                 <Link
                   href='https://www.linkedin.com/in/smedinaa11y/'
                   target={'_blank'}
