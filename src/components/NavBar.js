@@ -294,9 +294,9 @@ const NavBar = () => {
     `}
                 >
                   {mode === 'dark' ? (
-                    <SunIcon className={'fill-dark '} />
+                    <SunIcon className={'fill-dark w-6 h-6'} />
                   ) : (
-                    <MoonIcon className={'fill-dark'} />
+                    <MoonIcon className={'fill-dark w-6 h-6'} />
                   )}
                 </button>
               </motion.li>
